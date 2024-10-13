@@ -1,5 +1,5 @@
 # Use the official Gotenberg image as the base image
-FROM thecodingmachine/gotenberg:7
+FROM thecodingmachine/gotenberg:8
 
 # Set environment variables for Basic Authentication
 ENV GOTENBERG_API_BASIC_AUTH_USERNAME=admin \
@@ -8,5 +8,5 @@ ENV GOTENBERG_API_BASIC_AUTH_USERNAME=admin \
 # Expose the port Gotenberg listens on
 EXPOSE 3000
 
-# Start the Gotenberg service with the correct entrypoint
+# Start the Gotenberg service with the correct command and flags
 CMD ["gotenberg", "--api-enable-basic-auth"]

@@ -8,5 +8,5 @@ ENV GOTENBERG_API_BASIC_AUTH_USERNAME=admin \
 # Expose the port Gotenberg listens on
 EXPOSE 3000
 
-# Start the Gotenberg service with Basic Authentication enabled
+# Start the Gotenberg service with the correct entrypoint
 CMD ["gotenberg", "--api-enable-basic-auth"]
